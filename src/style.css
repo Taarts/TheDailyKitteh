@@ -1,10 +1,11 @@
 :root {
   font-size: 16px/1 em;
   font-family: 'Sofia Pro', sans-serif;
-  --sea: rgb(8, 175, 175);
+  --sea: #08afaf;
   --sky: #ddf2f3;
   --earthy: #d3d3d3;
   --asphalt: 090909;
+  --sun: #d5562b;
 }
 body {
   background-color: var(--sky);
@@ -20,8 +21,8 @@ top {
 }
 nav {
   display: flex;
+  justify-content: center;
   padding: 0.5rem;
-  justify-content: space-around;
   width: 100%;
   background-color: var(--sea);
   color: var(--sky);
@@ -30,39 +31,43 @@ main {
   display: flex;
   justify-content: right;
   flex-flow: column wrap;
+  margin: 1rem;
 }
 
 container {
   display: flex;
-
-  /* max-width: 1960px; */
   margin: 0 auto;
   padding: 0 20px;
 }
 
-a {
+nav a {
+  padding: 0.5rem;
   color: var(--sky);
-  justify-items: center;
+  /* justify-items: center; */
+
   /* text-decoration: none; */
 }
-nav.a:hover {
+nav a:hover {
+  padding: 0.5rem;
   text-decoration: none;
 }
 sidebar {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+
   align-items: left;
+  margin: 2rem;
   background-color: var(--sky);
   color: var(--asphalt);
-  padding: 5px;
-  border: 2rem solid var(--asphalt);
-  /* can't get border to work */
+  padding: 1px;
 }
-img {
-  border: 2rem solid var(--asphalt);
-  display: block;
-  padding: 1rem;
+#sb-area {
+  border: 0.2rem solid turquoise;
+  border-radius: 0.5rem;
+}
+sidebar img {
+  /* border-radius: 0.5rem;  <-- why? */
+  padding: 0.3rem;
 }
 h1 {
   text-align: center;
@@ -89,15 +94,20 @@ p {
 }
 footer {
   display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  width: 100%;
 }
 footer a {
+  display: flex;
+  padding: 0.5rem;
   text-decoration: none;
   color: var(--asphalt);
-  display: block;
 }
-footer.a:hover {
-  display: block;
-  border-color: var(--asphalt);
-  border-radius: 1px;
-  color: var(--sky);
+footer a:hover {
+  display: flex;
+  margin: 0 5px;
+  border: 0.1rem solid black;
+  /* border-radius: 1px; */
+  color: var(--sun);
 }
