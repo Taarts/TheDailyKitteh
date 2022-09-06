@@ -21,6 +21,7 @@
     <container>
       <sidebar id="sb-area">
         <img src="src/kitteh.jpg" alt="Kitteh" />
+        <h3>Kittehs of the Day</h3>
         <ul>
           <li>Spot</li>
           <li>Adeline</li>
@@ -70,7 +71,58 @@
       <a href="pat.html">Pat the Editors</a>
       <a href="catnip.html">Send us Catnip</a>
     </footer>
+    <hamburger>
+      <button id="hamburger-menu">
+        <nav id="sidebar-menu"></nav>
+      </button>
 
+      <!-- We add the checkbox -->
+      <input type="checkbox" id="hamburger-input" class="burger-shower" />
+
+      <!-- 
+      We use a `label` element with the `for` attribute 
+      with the same value as  our label `id` attribute 
+    -->
+
+      <label id="hamburger-menu">
+        <nav id="sidebar-menu">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="/FAPage.html">Feral Adventures</a></li>
+            <li><a href="kibble.html">Kibble Kibbitz</a></li>
+            <li><a href="tales.html">Tail Twitch Tales</a></li>
+            <li><a href="sunny-spots.html">Sunny Window Reviews</a></li>
+          </ul>
+        </nav>
+      </label>
+
+      <div class="overlay"></div>
+      <button id="hamburger-menu">
+        <nav id="sidebar-menu"></nav>
+      </button>
+
+      <!-- We add the checkbox -->
+      <input type="checkbox" id="hamburger-input" class="burger-shower" />
+
+      <!-- 
+  We use a `label` element with the `for` attribute 
+  with the same value as  our label `id` attribute 
+-->
+
+      <label id="hamburger-menu">
+        <nav id="sidebar-menu">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="/FAPage.html">Feral Adventures</a></li>
+            <li><a href="kibble.html">Kibble Kibbitz</a></li>
+            <li><a href="tales.html">Tail Twitch Tales</a></li>
+            <li><a href="sunny-spots.html">Sunny Window Reviews</a></li>
+          </ul>
+        </nav>
+      </label>
+
+      <div class="overlay"></div>
+    </hamburger>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
