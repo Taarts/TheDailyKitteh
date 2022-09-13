@@ -55,7 +55,6 @@ nav a:hover {
 sidebar {
   display: flex;
   flex-direction: column;
-
   align-items: left;
   margin: 2rem;
   background-color: var(--sky);
@@ -118,7 +117,7 @@ footer a:hover {
   color: var(--sun);
 }
 hamburger {
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 
 /* @import css '/hamburger-menu.css'; */
